@@ -15,7 +15,7 @@ do {
             const imovel = {}
             imovel.proprietario = prompt ("Qual nome do proprietario ? ")
             imovel.quarto = prompt("Quantos quartos possui? ")
-            imovel.banheiro = prompt("Quantos banheiros ? ")
+            imovel.banheiro = prompt("Quantos banheiros ?")
             
             const confima = confirm(
                 "\n proprietario: " + imovel.proprietario +
