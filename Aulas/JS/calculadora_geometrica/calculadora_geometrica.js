@@ -42,7 +42,53 @@ function area_circulo() {
 const resultado = area_circulo()
 
 alert(resultado)
-//do {
-//opcao = parseFloat(prompt('informe qual calculo deseja? '))
+
+
+do {
+
+   
+    let opcao = prompt("Qual calculo você deseja fazer? \n" +
+        "1 - Area do Triangulo \n" +
+
+        "2 - Area do Retangulo \n" +
+
+        "3 - Area do Quadrado \n" +
+
+        "4 - Area do Trapezio \n" +
+
+        "5 - Area do Circulo \n" +
+
+        "6 - Sair \n" 
+
+    )
     
-//} while (opcao !==3);
+    switch (opcao) {
+        case "1":
+            resultado = area_triângulo()
+            break;
+
+        case "2":
+            resultado = area_triângulo()
+            break;
+
+        case "3":
+            resultado = area_triângulo()
+            break;
+
+        case "4":
+            resultado = area_triângulo()
+            break;
+
+        case "5":
+            resultado = area_triângulo()
+            break;
+    
+        default:
+            alert("opção inválida")
+            break;
+    }
+
+
+
+    
+} while (opcao !==6);
