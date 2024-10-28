@@ -1,0 +1,119 @@
+Antes de entender sobre URLs absolutas e relativas é importante conhecer o
+conceito que chamamos de “raiz”. A “raiz” ou “diretório raiz” é o caminho
+inicial do site. Em nossos links da aula anterior a raiz é o arquivo index.html.
+A raiz é a página onde caímos quando não especificamos nenhum caminho na URL,
+apenas o endereço base:
+<html>
+  <head>
+    <title>Trabalhando com links</title>
+  </head>
+
+  <body>
+    <h1>Trabalhando com links</h1>
+
+    <p>
+      Navegue entre os arquivos das aulas:
+      <a href="http://localhost:5500/">Primeira página</a>
+      <a href="titulos.html">Aula: títulos e parágrafos</a>
+      <a href="formatacao.html">Aula: elementos de formatação</a>
+      <a href="imagens.html">Aula: imagens</a>
+    </p>
+  </body>
+</html>
+Como se trata de um caminho dentro do nosso próprio site, podemos ocultar o
+endereço base e usar apenas uma barra (“/” ) para designar a raiz do site. Esse
+é um ponto bem importante, sempre que você encontrar um caminho que começa com a
+barra ele está calculando esse caminho a partir da raiz (ex.:
+“/caminho/do/arquivo.html”):
+<html>
+  <head>
+    <title>Trabalhando com Links</title>
+  </head>
+
+  <body>
+    <h1>Trabalhando com Links</h1>
+
+    <div>
+      <p>Navegue entre os arquivos das aulas:</p>
+      <a href="/">Primeira Página</a> |
+      <a href="../formatacao/index.html">Aula: elementos de formatação</a> |
+      <a href="../titulos">Aula: títulos e parágrafos</a> |
+      <a href="../imagens/index.html">Aula: Imagens</a> |
+      <a href="../grecia">Artigo: Grécia antiga</a>
+    </div>
+  </body>
+</html>
+Entendido isso, agora vamos ao assunto da aula. Uma URL relativa é o que temos
+feito até o momento, onde não começamos o seu caminho com a barra. Com isso,
+para encontrar o caminho o cálculo é feito relativo ao diretório atual:
+<html>
+  <head>
+    <title>Trabalhando com Links</title>
+  </head>
+
+  <body>
+    <h1>Trabalhando com Links</h1>
+
+    <div>
+      <p>Navegue entre os arquivos das aulas:</p>
+      <a href="/">Primeira Página</a> |
+      <a href="../formatacao/index.html">Aula: elementos de formatação</a> |
+      <a href="../titulos">Aula: títulos e parágrafos</a> |
+      <a href="../imagens/index.html">Aula: Imagens</a> |
+      <a href="../grecia">Artigo: Grécia antiga</a>
+    </div>
+  </body>
+</html>
+Já para criar uma URL absoluta usamos a barra no começo:
+<html>
+  <head>
+    <title>Trabalhando com Links</title>
+  </head>
+
+  <body>
+    <h1>Trabalhando com Links</h1>
+
+    <div>
+      <p>Navegue entre os arquivos das aulas:</p>
+      <a href="/">Primeira Página</a> |
+      <a href="/formatacao/index.html">Aula: elementos de formatação</a> |
+      <a href="/titulos/index.html">Aula: títulos e parágrafos</a> |
+      <a href="/imagens/index.html">Aula: Imagens</a> |
+      <a href="/grecia">Artigo: Grécia antiga</a>
+    </div>
+  </body>
+</html>
+Para exemplificar melhor, crie a pasta “site” e, dentro dela, crie a pasta
+“paginas”. Dentro de páginas crie dois arquivos, “contato.html” e
+“servicos.html”:site/paginas/servicos.html
+<html>
+  <head>
+    <title>Serviços</title>
+  </head>
+
+  <body>
+    <h1>Página de serviços</h1>
+
+    <a href="contato.html">Contato (URL relativa)</a>
+    <a href="/site/paginas/contato.html">Contato (URL absoluta)</a>
+
+    <a href="../../links.html">Aula: links (URL relativa)</a>
+    <a href="/links">Aula: links (URL absoluta)</a>
+  </body>
+</html>
+site/paginas/contato.html
+<html>
+  <head>
+    <title>Teste</title>
+  </head>
+
+  <body>
+    <h1>Página de contato</h1>
+
+    <a href="servicos.html">Serviços (URL relativa)</a>
+    <a href="/site/paginas/servicos.html">Serviços (URL absoluta)</a>
+
+    <a href="../../links.html">Aula: links (URL relativa)</a>
+    <a href="/links">Aula: links (URL absoluta)</a>
+  </body>
+</html>

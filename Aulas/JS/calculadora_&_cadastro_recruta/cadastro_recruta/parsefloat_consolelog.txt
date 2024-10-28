@@ -1,0 +1,6 @@
+ano_nascimento = 2024 -(parseFloat(ano_nascimento))
+
+console.log('nome =',nome)
+console.log('sobrenome =',sobrenome)
+console.log('curso =',curso)
+console.log('idade: =',ano_nascimento)

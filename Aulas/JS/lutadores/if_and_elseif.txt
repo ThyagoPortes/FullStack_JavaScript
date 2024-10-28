@@ -1,0 +1,9 @@
+if ( ataque > defesa && escudo === "NÃO")
+{
+  dano = ataque - defesa
+  life = life - dano
+} else if ( ataque > defesa && escudo === "SIM"){
+    dano = (ataque - defesa) / 2 
+    life = life - dano
+
+ }

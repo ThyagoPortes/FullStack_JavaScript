@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+h1, h2{
+margin: 2rem;
+}
+img {
+
+    height: 300px;
+    display: inline-block;
+}
+
+.genres {
+    color: red;
+}
+
+
+header {
+    border-bottom: 1px solid #030308;
+    padding: 2rem ;
+    text-align: center;
+}
+
+.feature {
+
+padding: 20px;
+text-align: center;
+}
+
+.feature, .catalog, .cta{
+    text-align: center;
+    
+}
+
+.cta-button {
+    background-color: black;
+    width: 6px;
+    color: white;
+    display: block;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 0.9rem;
+    margin: 2rem auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+
+ul > li, a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: blue;
+    padding: 0.7rem;
+    color: white;
+    display: inline-block;
+    border-radius: 2rem;
+    padding:5px 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+p {
+
+margin: 2rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
