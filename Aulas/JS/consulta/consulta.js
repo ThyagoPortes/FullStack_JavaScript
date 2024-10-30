@@ -19,7 +19,7 @@ do {
             break;
 
         case '2':
-            if (fila.length < 0) {
+            if (fila.length > 0) {
                 let paciente_atendido = fila.pop()
                 alert(paciente_atendido + "Atendido")
             } else {

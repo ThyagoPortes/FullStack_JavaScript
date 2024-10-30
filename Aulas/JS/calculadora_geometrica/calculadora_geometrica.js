@@ -1,10 +1,9 @@
-
 function area_triângulo() {
 
     const base = parseFloat(prompt("qual valor da base? "))
     const altura = parseFloat(prompt("qual valor da altura? "))
     return (base * altura) / 2
-    
+
 }
 
 function area_retangulo() {
@@ -12,7 +11,7 @@ function area_retangulo() {
     const base = parseFloat(prompt("qual valor da base? "))
     const altura = parseFloat(prompt("qual valor da altura? "))
     return base * altura
-    
+
 }
 
 function area_quadrado() {
@@ -25,29 +24,23 @@ function area_trapezio() {
 
     const base_maior = parseFloat(prompt("qual valor da base maior? "))
     const base_menor = parseFloat(prompt("qual valor da base menor? "))
-    return ( base_maior + base_menor ) * altura / 2 
-    
+    return (base_maior + base_menor) * altura / 2
+
 }
 
 function area_circulo() {
 
     const raio = parseFloat(prompt("qual valor do raio? "))
-  
-    return Math.PI * ( raio * raio)
-    
+
+    return Math.PI * (raio * raio)
+
 }
 
 
 
-const resultado = area_circulo()
-
-alert(resultado)
-
-
 do {
 
-   
-    let opcao = prompt("Qual calculo você deseja fazer? \n" +
+    opcao = prompt("Qual calculo você deseja fazer? \n" +
         "1 - Area do Triangulo \n" +
 
         "2 - Area do Retangulo \n" +
@@ -58,37 +51,42 @@ do {
 
         "5 - Area do Circulo \n" +
 
-        "6 - Sair \n" 
+        "6 - Sair \n" )
 
-    )
-    
     switch (opcao) {
         case "1":
             resultado = area_triângulo()
+            alert("Resultado:" + resultado )
             break;
 
         case "2":
             resultado = area_triângulo()
+            alert("Resultado:" + resultado )
             break;
 
         case "3":
             resultado = area_triângulo()
+            alert("Resultado:" + resultado )
             break;
 
         case "4":
             resultado = area_triângulo()
+            alert("Resultado:" + resultado )
             break;
 
         case "5":
             resultado = area_triângulo()
+            alert("Resultado:" + resultado )
             break;
-    
+
+        case "6":
+            alert("saindo...")
+            break
+
         default:
             alert("opção inválida")
             break;
     }
 
 
-
-    
-} while (opcao !==6);
+} while (opcao !== "6");
