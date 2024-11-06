@@ -13,17 +13,21 @@ const personagens = [
 //Map
 
 // map: permite obter um novo array a partir de um array existenste
-const nomes = personagens.map(function (personagem)) {
+const nomes = personagens.map(function (personagem) {
   return personagem.nome
-}
+})
+
+console.log(nomes)
 
 // Filter
-/*
 
-// filter: permite obter um novo array contendo apenas elementos específicos de um array existente
+
+ //filter: permite obter um novo array contendo apenas elementos específicos de um array existente
 const orcs = personagens.filter(function (personagem) {
   return personagem.raca === "Orc"
 })
+
+console.log(orcs)
 
 // Reduce
 
@@ -47,6 +51,6 @@ const racas = personagens.reduce(function (acumulador, personagem) {
 // Sort
 
 // sort: ordena os elementos de um array a partir de comparações entre duplas de elementos
-personagens.sort(function (a, b) {
-  return a.nivel - b.nivel
-})
+//personagens.sort(function (a, b) {
+ // return a.nivel - b.nivel
+//} 
